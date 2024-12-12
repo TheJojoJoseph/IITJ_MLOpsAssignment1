@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IITJ Assignment 1 MLops - g23ai2100</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Predict MV Value</h2>
+    <form method="post" action="/">
+      <label for="CRIM">CRIM:</label>
+      <input type="number" name="CRIM" id="CRIM" required step="any" />
+
+      <label for="ZN">ZN:</label>
+      <input type="number" name="ZN" id="ZN" required step="any" />
+
+      <label for="INDUS">INDUS:</label>
+      <input type="number" name="INDUS" id="INDUS" required step="any" />
+
+      <label for="CHAS">CHAS:</label>
+      <input type="number" name="CHAS" id="CHAS" required step="any" />
+
+      <label for="NOX">NOX:</label>
+      <input type="number" name="NOX" id="NOX" required step="any" />
+
+      <label for="RM">RM:</label>
+      <input type="number" name="RM" id="RM" required step="any" />
+
+      <label for="AGE">AGE:</label>
+      <input type="number" name="AGE" id="AGE" required step="any" />
+
+      <label for="DIS">DIS:</label>
+      <input type="number" name="DIS" id="DIS" required step="any" />
+
+      <label for="RAD">RAD:</label>
+      <input type="number" name="RAD" id="RAD" required step="any" />
+
+      <label for="TAX">TAX:</label>
+      <input type="number" name="TAX" id="TAX" required step="any" />
+
+      <label for="PTRATIO">PTRATIO:</label>
+      <input type="number" name="PTRATIO" id="PTRATIO" required step="any" />
+
+      <label for="B">B:</label>
+      <input type="number" name="B" id="B" required step="any" />
+
+      <label for="LSTAT">LSTAT:</label>
+      <input type="number" name="LSTAT" id="LSTAT" required step="any" />
+
+      <button type="submit">Predict</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+  </body>
+</html>
