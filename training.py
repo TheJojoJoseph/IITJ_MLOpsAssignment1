@@ -27,4 +27,4 @@ joblib.dump(scaler, 'scaler.pkl')
 joblib.dump(model, 'linear_regression_model.pkl')
 
 
-print("Model and scaler  completed")
+print("Model and scaler  complete")
